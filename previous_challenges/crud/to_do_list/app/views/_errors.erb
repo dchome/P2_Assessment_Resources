@@ -1,0 +1,11 @@
+<% if errors %>
+  <div>
+    <span>Hang on:</span>
+    <ul>
+      <% errors.each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+

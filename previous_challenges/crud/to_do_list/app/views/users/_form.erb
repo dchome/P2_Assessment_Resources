@@ -1,0 +1,47 @@
+<div id="user_info_wrapper">
+
+  <h1><%= logged_in? ? "Update your profile information below:" : "Register Here!" %></h1>
+
+  <table id="user_info">
+     <tr>
+      <td>
+      <form action='<%= action %>' method='post'>
+        <% if logged_in? %>
+          <input type="hidden" name="_method" value="put">
+        <% end %>
+    <% unless logged_in? %>
+      Username: <input type='text' name='user[username]', placeholder="<%= user.try(:username) || 'Username' %>">
+      </td>
+    </tr>
+    <tr>
+      <td>
+    <% end %>
+        Email: <input type='email' name='user[email]' placeholder="<%= user.try(:email) || 'Email' %>">
+      </td>
+    </tr>
+    <tr>
+      <td>
+      First Name: <input type='text' name='user[first_name]' placeholder="<%= user.try(:first_name) || 'First Name' %>">
+      </td>
+    </tr>
+    <tr>
+      <td>
+      Last Name: <input type='text' name='user[last_name]' placeholder="<%= user.try(:last_name) || 'Last Name' %>" >
+      </td>
+    </tr>
+    <% unless logged_in? %>
+      <tr>
+        <td>
+        Password: <input type='password' name='user[password]' placeholder='Password'>
+        </td>
+      </tr>
+    <% end %>
+    <tr>
+      <td>
+        <input type="submit" value=<%= logged_in? ? 'Update' :
+         'Create Account'%> >
+      </form>
+      </td>
+    </tr>
+  </table>
+</div>

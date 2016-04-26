@@ -1,0 +1,106 @@
+body {
+  background-color: #90C3D4;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #4D2816;
+}
+
+main {
+  width: 70%;
+  margin: 1% 15% 0 15%;
+  padding: 5px;
+  background-color: #E8E3D3;
+  min-height: 600px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px gray;
+}
+
+main h1, h2 {
+  text-align: center;
+  margin: 1em;
+}
+
+main a {
+  text-decoration: none;
+  color: #4D2816;
+}
+
+#nav-container {
+  height: 30px;
+  background-color: #303436;
+  color: #BFC7C9;
+}
+
+nav {
+  width: 70%;
+  margin: 0 15% 0 15%;
+}
+
+nav li {
+  list-style-type: none;
+  float: right;
+  height: 30px;
+  padding: 0 15px 0 15px;
+  margin-right: none;
+  font-size: 20px;
+  border-radius: 3px;
+  line-height: 30px
+}
+
+nav a {
+  color: #BFC7C9;
+
+}
+
+nav input[type=submit] {
+  background-color: transparent;
+  padding: none;
+  border: none;
+}
+
+nav li:hover {
+  background-color: #BFC7C9;
+  color: #303436;
+}
+
+#login-wrapper, #user_info_wrapper {
+  margin: 5% auto;
+  background-color: white;
+  width: 50%;
+  min-height: 350px;
+  padding-top: 10px;
+  border-radius: 20px;
+}
+
+#login, #user_info {
+  margin: auto;
+}
+
+#login td {
+  height: 45px;
+}
+
+#user_info td {
+  height: 30px;
+}
+
+#login input[type=submit] {
+  background-color: #90C3D4;
+}
+
+.list_things {
+  width: 70%;
+  margin: 0 15% 0 15%;
+}
+
+.list_things tr {
+  text-align: center;
+  border-bottom: 1px solid #90C3D4;
+  border-radius: 20px;
+  height: 30px;
+}
+ .edit {
+  width: 95%;
+  position: relative;
+  text-align: right;
+
+ }

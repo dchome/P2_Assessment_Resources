@@ -1,0 +1,27 @@
+<p class="edit"><a href="/users/<%=@user.id%>/edit">Edit your profile</a></p>
+
+<h1>Hello, <%="#{@user.first_name} #{@user.last_name}."%></h1>
+
+<h2>Here are your To-Do Lists:</h2>
+
+<table class="list_things">
+  <tr>
+    <th>List Name</th>
+    <th>Tags</th>
+    <th>Created On</th>
+    <th>Completed?</th>
+    <th></th>
+  </tr>
+  <% @lists.each do |list| %>
+    <tr >
+      <td><%= list.title %></td>
+      <td><%= list.format_tags %></td>
+      <td><%= list.formatted_created_on %></td>
+      <td><%= list.complete_message %></td>
+      <td><a href="/lists/<%= list.id %>">View</a>
+    </tr>
+  <% end %>
+</table>
+<p><a href="users/<%=@user.id%>/"
+
+

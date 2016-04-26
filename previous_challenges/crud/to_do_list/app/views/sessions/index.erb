@@ -1,0 +1,26 @@
+
+<div id="login-wrapper">
+  <h1>Log In</h1>
+  <table id="login">
+     <tr>
+      <td>
+        <form action='/sessions' method='post'>
+        Username: <input type='text' name='user[username]', placeholder='Username'>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Password: <input type='password' name='user[password]' placeholder='Password'>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input class="button" type='submit' value='Log In'>
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td><a href='/users/new'>New user? Click here to register</a></td>
+    </tr>
+  </table>
+</div>
